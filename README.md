@@ -25,7 +25,7 @@ jobs:
     steps:
     - uses: microsoft/variable-substitution@v1 
       with:
-        files: 'Application/*.json, Application/*.yaml, ./Application/SampleWebApplication/We*.config'        
+        files: 'Application/*.json, Application/*.yaml, ./Application/SampleWebApplication/We*.config'
       env:
         Var1: "value1"
         Var2.key1: "value2"
