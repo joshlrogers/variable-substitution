@@ -64,7 +64,7 @@ export class EnvTreeUtility {
             let envVarTreeIterator = envVarTree;
             let envVariableNameArray = key.split(splitChar);
             
-            for(let variableName of envVariableNameArray) {
+            for(let variableName of envVariableNameArray) {                
                 if(envVarTreeIterator.child[variableName] === undefined || typeof envVarTreeIterator.child[variableName] === 'function') {
                     envVarTreeIterator.child[variableName] = {
                         value: null,
