@@ -5,9 +5,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     
-  steps:
-    - name: 'Test env'
-      env:
-        app-name: 'Test App'
-      run: |
-        printenv
+    steps:
+      - name: 'Test env'
+        env:
+          app-name: 'Test App'
+        run: |
+          printenv
